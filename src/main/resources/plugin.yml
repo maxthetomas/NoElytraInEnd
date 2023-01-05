@@ -2,3 +2,6 @@ name: NoElytraInEnd
 version: '${version}'
 main: ru.maxthetomas.plugins.blackymare.noelytrainend.NoElytraInEnd
 api-version: 1.19
+author: 'maxthetomas'
+description: 'plugin to disable elytras in the end dimension'
+website: 'https://github.com/maxthetomas/NoElytraInEnd'

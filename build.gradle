@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'ru.maxthetomas.plugins.blackymare'
-version = '1.0-SNAPSHOT'
+version = '0.1'
 
 repositories {
     mavenCentral()
@@ -43,23 +43,5 @@ processResources {
     filteringCharset 'UTF-8'
     filesMatching('plugin.yml') {
         expand props
-    }
-}
-
-task uploadToServer(type: Exec) {
-    workingDir "$projectDir/build/libs"
-    if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
-        commandLine 'cmd', '/c', 'scp *.jar max@192.168.0.10:/home/max/minecraft-server/plugins/plugin.jar'
-    } else {
-        commandLine 'sh', '-c', 'scp *.jar max@192.168.0.10:/home/max/minecraft-server/plugins/plugin.jar'
-    }
-}
-
-task rconReload(type: Exec) {
-    workingDir 'C:/Users/maxth/desktop/coding/minecraft-rcon'
-    if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
-        commandLine 'cmd', '/c', 'node reloadserver.js'
-    } else {
-        commandLine 'sh', '-c', 'node reloadserver.js'
     }
 }
