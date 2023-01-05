@@ -1,0 +1,7 @@
+# made by maxthetomas for blackymare
+
+enabled: true
+disableForOPs: false
+
+message: "С вас были сняты элитры, поскольку они запрещены в энде"
+messageIfFull: "У вас не было места в инвентаре, элитры были выкинуты на землю"

@@ -1,0 +1,4 @@
+name: NoElytraInEnd
+version: '${version}'
+main: ru.maxthetomas.plugins.blackymare.noelytrainend.NoElytraInEnd
+api-version: 1.19
