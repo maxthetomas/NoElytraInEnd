@@ -28,7 +28,7 @@ public final class NoElytraInEnd extends JavaPlugin implements Listener {
         message = getConfig().getString("message", "You cannot use elytra in the end on this server.");
         messageIfFull = getConfig().getString("messageIfFull", "Your elytra were dropped on the ground because you didn't have enough space in your inventory.");
 
-        if (!enabled)
+        if (enabled)
             Bukkit.getPluginManager().registerEvents(this, this);
     }
 
